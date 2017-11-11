@@ -23,9 +23,13 @@ for( $i = 0; $i < $baris; $i++ ) {  //melakukan perulangan berdasarkan jumlah ba
 }
  
 //Menampilkan hasil penjumlahan matriks yang telah disimpan di dalam Matriks C
+echo "<table border='1' cellspacing='0' cellpadding='5'>";
 for( $i = 0; $i < $baris; $i++ ) {
+	echo "<tr>";
     for( $j = 0; $j < $kolom; $j++ ) {
-        echo $matriksC[$i][$j]." ";
+        echo "<td>". $matriksC[$i][$j]."</td>";
     }
+    echo "</tr>";
 }
+echo "</table>";
 ?>
